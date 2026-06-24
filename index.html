@@ -11,39 +11,37 @@
 </head>
 
 <body>
+    <section class="container"> 
+        <div class="content">
+            <h2>America's "stand-your-ground" laws</h2>
+            <p>A long-standing principle of U.S. self-defense law is that a victim has a "duty to retreat" before using lethal force against an assailant.</p>
+            <p>Yet with the stroke of a pen in 2005, Florida expanded “stand-your-ground” laws.  Now, victims who “reasonably believed” their lives to be threatened were provided additional legal leeway to meet force with force – even in public spaces and, more importantly, without the duty to try and retreat first.</p>   
+            <p>More than 20 states have passed similar “stand-your-ground” laws since then.  Critics warned that, rather than defending self-defense rights, the expanded laws would result in needless deaths.</p>   
+        </div>
+    </section>
+
+      <section class="container"> 
+        <div class="content">
+            <h2>A Sudden Spike After the Law Came into Effect</h2>
+            <p>Ultimately, the expanded laws granted victims immunity from civil liability for the use of justified defensive force.  With the expected cost of using lethal force lowered, the chance that a victim would be found guilty of the injury/death inflicted plummeted. And just like that, victims who “reasonably believed” their lives to be threatened were more likely to “meet force with force, including deadly force”.</p>
+            <p>Research published by Cheng & Hoekstra (2013) confirms these horrors.  Soon after the laws took effect, there was an 8% increase in homicides.  More disturbingly, the authors found that across the 21 states where “stand-your-ground” laws were expanded, there were 600 additional homicides per year.</p>    
+        </div>
+    </section>
+
     <section class="container">
         <div class="content">
-            <h2>A Replication of Cheng & Hoekstra (2013)</h2>
-            <p>Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? 
-            <p>by Michael Valentino Ochoa | mvochoa2@uic.edu</p>
+            <h2>A Replication of <a href="https://business.baylor.edu/Scott_Cunningham/teaching/cheng-and-hoekstra-2013.pdf">Cheng & Hoekstra (2013)</a></h2>
+            <p>This replication exercise provides unsettling evidence against the expanded laws.</p>  
+            <p>by MICHAEL V. OCHOA</p>
             <a href="https://github.com/mochoabuilds/Replication-of-Cheng-Hoekstra-2013-/blob/main/4Final.R">R code</a> 
         </div>
     </section>
 
     <section class="container"> 
         <div class="content">
-            <h2>Castle Doctrine Statutes</h2>
-            <p>A long-standing principle of English common law is that an individual has a “duty to retreat” before using lethal force against an assailant.  The exception is when the assault occurs at your home (your castle). 
-            </p>   
-            <p>In 2005, a slew of U.S. states (starting with Florida) expanded the Castle Doctrine to apply anywhere a person has a legal right to be, not just at your home.  These expanded laws granted immunity from civil liability for the use of justified defensive force.  It also shifted the burden of proof to the prosecutor, who had to show that an individual acted unreasonably when using lethal force against an assaliant.     
-            </p>
-        </div>
-    </section>
-
-     <section class="container"> 
-        <div class="content">
-            <h2>Castle Doctrine and Crime</h2>
-            <p>The main reason for "stand your ground" laws was to provide additional legal leeway to potential victims in a self-defense situation.  However, these expanded versions of the castle doctrine law alters incentives.  Under these expansions, the cost of using lethal force decreases as there is a lower probability that one will be found guilty of the death/injury inflicted.  Thus, victims are more likely to respond to threats by using lethal force.</p> 
-            <p>Whether or not people respond to these changes in law is an empirical question.  It is important to estimate the costs and benefits of these self-defense laws.  To assess these possibilities, this replication exercise evaluates the impact of the expanded castle doctrine law on homicide, motor vehicle theft, larceny, robbery, and aggregated assault.</p>  
-        </div>
-    </section>
-
-    <section class="container"> 
-        <div class="content">
-        <h2>Identification</h2>
-          <p>Cheng & Hoekstra’s (2013) research design is a difference-in-differences (DiD).  It exploits the staggered adoption of Castle Doctrine Laws (CDL) between 2000 and 2010.  The sample comprises 50 U.S. states (21 treated states) over 11 years. The estimation method has two-way fixed effects, where different types of crimes are considered as outcomes.</p>
-          <p>The identifying assumption is that, in the absence of CDL, adopting states (treated) would have experienced changes in crime similar to those of nonadopting states (control) in the same region of the country between 2000 and 2010. To assess whether the parallel trends assumption hold, the analysis below looks for visual evidence.
-          </p>
+        <h2>Identification Strategy</h2>
+          <p>Cheng & Hoekstra’s (2013) research design is a difference-in-difference (DID) design that exploits the staggered adoption of the “Castle Doctrine” or “stand-your-ground” laws from 2000 to 2010.</p>
+          <p>The identifying assumption is that, in the absence of Castle Doctrine Laws (CDL), adopting states would have experienced changes in crime similar to those of non-adopting states in the same regions of the country between 2000 and 2010.  To assess whether the parallel trends assumption holds, the analysis below looks for visual evidence.</p>
         </div>
     </section>
 
@@ -59,16 +57,16 @@
 
     <section class="container">
         <div class="content">
-            <h2>Exploring Parallel Trends Assumption in Florida</h2>
-            <p>Before the 2005 CDL expansion, Florida's (treated group, red) log homicide rate was mostly flat, with a slight dip from 2004 to 2005.  Whereas the control group (blue) remained relatively stable, with a slight uptick from 2004 to 2005.  Because the slopes of Florida and the control group are not parallel before 2005, this research design does not satisfy the parallel trends assumption.</p>
-            <p>Following the CDL expansion in 2005, Florida showed a large increase in homicides from 2005 to 2007, peaking around 2007, and declining by 2010, but still largely above pre-treatment levels.  On the other hand, the control group remained stable from 2005 to 2007 but experienced a steep decline following the adoption of CDL.  This gap could be explained by Florida’s rising rates of homicide, coinciding with control states experiencing a large downward shift in crime.  
-            <p>When shown together, the two plots suggest an increase in Florida’s homicide rate after the CDL expansion; yet any causal interpretation must include region-by-year FE and other controls – not present in this graph.</p>
+            <h2>Assessing the Parallel Trends Assumption in Florida</h2>
+            <p>Before the 2005 CDL expansion, Florida's (treated group, red) log homicide rate was mostly flat, with a slight dip from 2004 to 2005.  Whereas the control group (blue) remained relatively stable, with a slight uptick from 2004 to 2005.  Because the slopes of Florida and the control group are not parallel before 2005, this DID research design does not satisfy the parallel trends assumption.</p>
+            <p>What’s more, following the CDL expansion in 2005, Florida showed a large increase in homicides from 2005 to 2007, peaking around 2007, and declining by 2010, but still largely above pre-treatment levels.  On the other hand, the control group remained stable from 2005 to 2007 but then experienced a steep decline following the adoption of CDL.</p> 
+            <p>This gap could be explained by Florida’s rising rates of homicide, coinciding with control states experiencing a large downward shift in crime.  When shown together, the plots suggest an increase in Florida’s homicide rate after the CDL expansion; yet any causal interpretation must include region-by-year FE and other controls – not present in this plot.</p>
         </div>
     </section>
 
     <section class="container">
         <div class="content">
-            <h2>Confidence Intervals (CI) and Point Estimates in Florida</h2>
+            <h2>Effect of CDL on Homicide in Florida</h2>
              <br>
              <br>
              <br>
@@ -78,8 +76,8 @@
 
      <section class="container">
         <div class="content">
-            <h2>Interpreting CI and Point Estimates in Florida</h2>
-             <p>The graph above plots confidence intervals and point estimates to show how confident we are that expanded CDL affected homicide rates.  In this case, all years after 2005 have a statistically significant realationship as all of the confidence intervals do not include zero. </p>
+            <h2>Interpreting the Effect of CDL on Homicide in Florida</h2>
+             <p>The graph above plots confidence intervals and point estimates.  It shows how confident Cheng & Hoekstra are that expanded CDL affected homicide rates.  In this case, all years after 2005 have a statistically significant relationship, as none of the confidence intervals include zero.</p>
         </div>
     </section>
 
@@ -95,16 +93,16 @@
 
      <section class="container">
         <div class="content">
-            <h2>Parallel Trends Assumption in Georgia</h2>
-            <p>As previously mentioned, the key identifying assumption in this research design is the parallel trends assumption.  Due to the South having historically higher violent crime rates, Georgia (treated, red) has a higher average homicide rate than the control group (blue).  Whereas, the control group runs relatively flat, with a slight increase from 2000 to 2004, followed by another uptick from 2004 to 2005.</p>
-            <p> Ultimately, the pre-trends are not parallel, suggesting Georgia was on a different trajectory before adopting the law; therefore, a simple two-group difference-in-difference would not suffice.</p>
-            <p>What’s more, following the adoption of CDL, Georgia showed a spike in homicide rates between 2006 and 2007 before declining gradually by 2010.  While the rates in the control group remained flat until 2007, they declined from 2007 to 2010.  The graph suggests that post-CDL, homicides increased in Georgia relative to the control group, but any causal interpretation must once again include region-by-year FE and other controls – not present in this graph.</p>
+            <h2>Assessing the Parallel Trends Assumption in Georgia</h2>
+            <p>As previously mentioned, the key identifying assumption in this research design is the parallel trends assumption.  Due to the South historically having higher violent crime rates, Georgia (treated, red) has a higher average homicide rate than the control group (blue).  On the other hand, the control group runs relatively flat, with a slight increase from 2000 to 2004, followed by another uptick from 2004 to 2005.  Ultimately, the pre-trends are not parallel, suggesting Georgia was on a different trajectory before adopting the law; therefore, a simple two-group difference-in-difference would not suffice. </p>
+            <p>Furthermore, following the adoption of CDL, Georgia showed a spike in homicide rates between 2006 and 2007 before declining gradually by 2010.  Whereas the rates in the control group remained flat until 2007, then declined from 2007 to 2010.  The plot suggests that post-CDL, homicides increased in Georgia relative to the control group.</p>
+            <p>Altogether, this plot shows why Cheng & Hoekstra (2013) included region-by-year FE as Georgia should be compared with other southern states in the same year, rather than with a national control group.</p>
         </div>
     </section>
 
       <section class="container">
         <div class="content">
-            <h2>CI and Point Estimates in Georgia</h2>
+            <h2>Effect of CDL on Homicide in Georgia</h2>
              <br>
              <br>
              <br>
@@ -114,31 +112,31 @@
 
     <section class="container">
         <div class="content">
-            <h2>Interpreting CI and Point Estimates in Georgia</h2>
-            <p>Once again, the graph plots confidence intervals and point estimates to show how confident we are that expanded CDL affected homicide rates. In this case, the years 2007, 2009, and 2010 produce a statistically significant increase in homicides as they do not include zero.</p>
+            <h2>Interpreting the Effect of CDL on Homicide in Georgia</h2>
+            <p>Once again, the graph above plots confidence intervals and point estimates.  It shows how confident the authors are that expanded “stand your ground” laws affected homicide rates.  In this case, the years 2007, 2009, and 2010 produce a statistically significant increase in homicides as they do not include zero.</p>
         </div>
     </section>
 
      <section class="container">
         <div class="content">
          <h2>Data Preparation for Multistate Homicide Regression</h2>
-         <p>To ensure results are more accurate, further complexity was added to the model.  In this case, fixed effects and population weights to account for state-level population differences were included.</p>
+         <p>To improve the accuracy of our results, the replication exercise adds further complexity to the model by including fixed effects and population weights to account for state-level population differences.</p>
         </div>
     </section>
 
     <section class="container">
         <div class="content">
         <h2>Why State Fixed Effects?</h2>
-            <p>State FE control for unobserved heterogeneity that is constant across observations belonging to a state, such as demographics (long-term racial composition, median age, urbanization levels), geography (presence of a major cities, crime affected by seasonal climate), police infrastructure (officers per capita, policing style, judicial strictness, sentencing norms), baseline crime levels, cultural norms around self-defense, long-standing gun ownership rates and enduring economic differences.</p>  
-            <p>Such FE are baked into each state and don’t fluctuate year to year. State FE removes them as sources of bias, ensuring comparisons are within-state over time rather than across states with different baselines. In other words, state FE captures how crime changed in a state after CDL was enacted in 2005, relative to the state's crime trend prior to its passage.</p>
+            <p>State fixed effects (FE) control for unobserved heterogeneity that is constant across observations belonging to a state, such as demographics (long-term racial composition, median age, urbanization levels), geography (presence of a major cities, crime affected by seasonal climate), police infrastructure (officers per capita, policing style, judicial strictness, sentencing norms), baseline crime levels, cultural norms around self-defense, long-standing gun ownership rates and enduring economic differences.</p>  
+            <p>These FE are baked into each state and don’t fluctuate year to year. State FE removes them as sources of bias, ensuring comparisons are within-state over time rather than across states with different baselines.  In other words, state FE captures how crime changed in a state after CDL was enacted in 2005, relative to the state's crime trend prior to its passage.</p>
         </div>
     </section>
 
     <section class="container">
         <div class="content">
          <h2>Why Year Fixed Effects?</h2>
-         <p>Year FE control for unobserved heterogeneity that is constant across observations that belong to all states, such as national business cycles that affect crime rates, federal sentencing revisions, and federal funding changes for law enforcement, nationwide shifts in gun culture, and nationwide declines in crime.</p>
-         <p>These factors are common to all states; therefore, I sweep them aside.  Year FE absorbs these national shocks, so anything affecting all states each year is not mistaken for treatment effects.  This is essential because crime rates oscillated in the 2000s for reasons unrelated to CDL.</p>
+         <p>Year FE control for unobserved heterogeneity that is constant across observations that belong to all states, such as national business cycles that affect crime rates, federal sentencing revisions, and federal funding changes for law enforcement, nationwide shifts in gun culture, and nationwide declines in crime. These factors are common to all states; therefore, the replication exercise excludes them.</p>
+         <p>Basically, year FE absorbs these national shocks, so anything affecting all states each year is not mistaken for treatment effects.  This is essential because crime rates oscillated in the 2000s for reasons unrelated to CDL.</p>
         </div>
     </section>
 
@@ -163,8 +161,7 @@
         <div class="content">
          <h2>Interpreting Multistate Homicide Regression</h2>
          <p>The first column considers only state and year FE, the second column adds region-by-year FE, and the third column adds time-varying covariates and state-specific trends.</p>
-         <p>After adding fixed effects and population weighting, there is a statistically significant increase in homicide rates stemming from self-defense laws.  This suggests that CDL increased murder by 8%. Sadly, this accounts for 600 additional murders per year across the 21 states where CDL was expanded.</p>
-         <p>These results remain significant even as more covariates are added, with a larger impact on our outcome variable, CDL as the covariate count increases in the third column.</p>
+         <p>After adding fixed effects and population weighting, there is a statistically significant increase in homicide rates stemming from self-defense laws.  This suggests that CDL increased murder by 8% when using a population-weighted regression. Sadly, this accounts for 600 additional murders per year across the 21 states where CDL was implemented.  These results remain significant even as more covariates are added, but we observe a larger impact on our outcome variable, CDL, as the covariate count increases.</p>
         </div>
     </section>
 
@@ -187,6 +184,7 @@
     <section class="container">
         <div class="content">
          <h2>Interpreting Falsification Test: Motor Vehicle Theft</h2>
+         <p>The first column only considers state and year FEs. The second column adds region-by-year fixed effects, and the third column adds time-varying covariates and state-specific trends.</p>
          <p>After examining the results, regardless of the covariates added, the effect of CDL on motor vehicle theft remains statistically insignificant.  This provides a strong baseline for falsification tests.</p>
         </div>
     </section>
@@ -227,7 +225,9 @@
      <section class="container">
         <div class="content">
          <h2>Interpreting Deterrence Effects: Robbery</h2>
-         <p>The regression results show CDL has no effect on robbery.  Because the results are statistically insignificant, they indicate that the law did not deter.</p>
+         <p>The first column only considers state and year FEs. The second column adds region-by-year fixed effects, and the third column adds time-varying covariates and state-specific trends.</p>
+         <p>According to the regression results, CDL has no effect on robbery.  Because the results are statistically insignificant, they indicate that the law did not deter.   
+        </p>
         </div>
     </section>
 
@@ -243,7 +243,7 @@
     <section class="container">
         <div class="content">
          <h2>Interpreting Deterrence Effects: Aggravated Assault</h2>
-         <p>The results of the regression indicate that CDL has no effect on aggravated assault.  Because the results are largely statistically insignificant, they indicate that the law once again did not have a deterrent effect.</p>
+         <p>The regression results show CDL has no effect on aggravated assault.  Because the results are largely statistically insignificant, they indicate that the law once again did not have a deterrent effect.</p>
         </div>
     </section>
 
