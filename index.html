@@ -63,23 +63,6 @@
         </div>
     </section>
 
-    <section class="container">
-        <div class="content">
-            <h2>Effect of CDL on Homicide in Florida</h2>
-             <br>
-             <br>
-             <br>
-             <img src="FloridaCDL.png"> 
-        </div>
-    </section>
-
-     <section class="container">
-        <div class="content">
-            <h2>Interpreting the Effect of CDL on Homicide in Florida</h2>
-             <p>The graph above plots confidence intervals and point estimates.  It shows how confident Cheng & Hoekstra are that CDL expansion affected homicide rates.  In this case, all years after 2005 have a statistically significant relationship, as none of the confidence intervals include zero.</p>
-        </div>
-    </section>
-
    <section class="container">
         <div class="content">
             <h2>Homicide in Geogria</h2>
@@ -94,33 +77,16 @@
         <div class="content">
             <h2>Assessing the Parallel Trends Assumption in Georgia</h2>
             <p>As mentioned above, the key identifying assumption in this research design is the parallel trends assumption.  Due to the South historically having higher violent crime rates, Georgia has a higher average homicide rate than the control group.</p>
-            <p>On the other hand, the control group runs relatively flat, with a slight increase from 2000 to 2004, followed by another uptick from 2004 to 2005.  Ultimately, the pre-trends are not parallel, suggesting Georgia was on a different trajectory before adopting the law; therefore, a simple two-group difference-in-difference would not suffice.</p>
+            <p>On the other hand, the control group runs relatively flat, with a slight increase from 2000 to 2004, followed by another uptick from 2004 to 2005.  Because the pre-trends are not parallel, it suggests Georgia was on a different trajectory before adopting the law; therefore, a simple two-group difference-in-difference would not suffice.</p>
             <p>Furthermore, following the adoption of CDL, Georgia showed a spike in homicide rates between 2006 and 2007 before declining gradually by 2010.  Whereas the rates in the control group remained flat until 2007, then declined from 2007 to 2010.  The plot suggests that post-CDL, homicides increased in Georgia relative to the control group.</p>
             <p>Altogether, this plot shows why Cheng & Hoekstra (2013) included region-by-year FE as Georgia should be compared with other southern states in the same year, rather than with a national control group.</p>
-        </div>
-    </section>
-
-      <section class="container">
-        <div class="content">
-            <h2>Effect of CDL on Homicide in Georgia</h2>
-             <br>
-             <br>
-             <br>
-             <img src="GeorgiaCDL.png"> 
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="content">
-            <h2>Interpreting the Effect of CDL on Homicide in Georgia</h2>
-            <p>Once again, the graph above plots confidence intervals and point estimates.  It shows how confident the authors are that expanded “stand your ground” laws affected homicide rates.  In this case, the years 2007, 2009, and 2010 show a statistically significant increase in homicides because none of these years has a zero.</p>
         </div>
     </section>
 
      <section class="container">
         <div class="content">
          <h2>Data Preparation for Multistate Homicide Regression</h2>
-         <p>To improve the accuracy of our results, the replication exercise adds complexity to the model by including fixed effects and population weights to account for state-level population differences.</p>
+         <p>To improve the accuracy of our results, the replication exercise adds fixed effects, multiple sets of covariates and population weights to account for state-level population differences.</p>
         </div>
     </section>
 
@@ -168,8 +134,9 @@
 
     <section class="container">
         <div class="content">
-         <h2>Falsification Tests</h2>
-         <p>Many would assume that CDL would only affect a state’s homicide rates or crimes linked to physically harming others. It is expected that crimes such as motor vehicle theft and larceny would remain constant during the passing and implementation of these expanded laws.  To test this assumption, two falsification tests were conducted.</p>
+         <h2>Alternative Model: Falsification Tests</h2>
+         <p>What distinguishes an interesting paper from an exceptional one is the use of multiple sets of covariates (as shown in the multistate regression above) and alternative models (as shown below).  Both ensure that estimates are robust to a wide range of econometric specifications.</p>
+         <p>For example, CDL would presumably only affect a state’s homicide rates or crimes linked to physically harming others.  Crimes such as motor vehicle theft and larceny would likely remain constant during the passing and implementation of expanded laws.  To test this assumption, two falsification tests were conducted.</p>
         </div>
     </section>
 
@@ -207,7 +174,7 @@
 
     <section class="container">
         <div class="content">
-         <h2>Deterrence Effects</h2>
+         <h2>Alternative Model: Deterrence Effects</h2>
          <p>Beyond testing if homicide rates change, many would like to know if CDLs have a deterrent effect.  That is, if potential criminals know their victims can legally shoot them in self-defense, does that drive a drop in robbery and aggravated assault?</p>
         </div>
     </section>
@@ -240,15 +207,15 @@
     <section class="container">
         <div class="content">
          <h2>Interpreting Deterrence Effects: Aggravated Assault</h2>
-         <p>The regression results show CDL has no effect on aggravated assault.  Because the results are largely statistically insignificant, they indicate that the law once again did not have a deterrent effect.</p>
+         <p>The regression results show CDL has no effect on aggravated assault.  Once more, the results are largely statistically insignificant and indicate the expanded law did not have a deterrent effect.</p>
         </div>
     </section>
 
      <section class="container">
         <div class="content">
          <h2>What Do Opponents of the Expanded Law Say?</h2>
-         <p>While the expanded “stand-your-ground” laws do not require a person to retreat, they do not provide a blanket defense for shooting at anyone who approaches you. There must be an indication of reasonable fear.</p>  
-         <p>Opponents argue that the expanded laws make it too easy to claim self-defense when violence could have been avoided.  According to Cheng & Hoekstra, there is evidence that they increase total homicide rates, as shown by the data replication above.</p>
+         <p>While the expanded “stand-your-ground” laws do not require a person to retreat, they do not provide a blanket defense for shooting at anyone who approaches you.</p>  
+         <p>Critics argue that the expanded laws make it too easy to claim self-defense when violence could have been avoided.  As shown by the data replication above, there is evidence that they increase total homicide rates.</p>
         </div>
     </section>
 
