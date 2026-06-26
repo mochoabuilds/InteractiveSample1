@@ -66,17 +66,17 @@ section:nth-of-type(4) {
 }
 section:nth-of-type(5) {
     height: 1000px;
-    background-color: white
 }
 section:nth-of-type(6) {
     height: 1000px;
+    background-color: white;
 }
 section:nth-of-type(7) {
     height: 1000px;
-    background-color: white;
 }
 section:nth-of-type(8) {
     height: 1000px;
+    background-color: white;
 }
 section:nth-of-type(9) {
     height: 1000px;
